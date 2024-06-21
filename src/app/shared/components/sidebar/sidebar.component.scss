@@ -1,4 +1,53 @@
-.footer-container {
+.sidebar {
+  background-color: #343a40;
+  min-height: 100vh;
+}
+
+.img-container {
+  text-align: center;
+  width: 100%;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px; /* Ajusta el tamaño según tu necesidad */
+}
+
+.footer {
   font-size: 0.9rem;
-  height: 200px;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: #adb5bd;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+
+  &.active {
+    background-color: #007bff;
+    color: white;
+  }
+}
+
+
+.github-img {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
