@@ -6,48 +6,77 @@
 .img-container {
   text-align: center;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .logo-img {
   width: 150px;
-  height: 150px; /* Ajusta el tamaño según tu necesidad */
-}
-
-.footer {
-  font-size: 0.9rem;
-  padding-bottom: 1rem;
-}
-
-a {
-  color: #adb5bd;
-  text-decoration: none;
-
-  &:hover {
-    color: #fff;
-  }
+  height: 150px; /* Adjust the size as needed */
 }
 
 .nav-link {
   font-size: 1.1rem;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
-
-  &.active {
-    background-color: #007bff;
-    color: white;
-  }
+  color: #adb5bd;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+.nav-link:hover,
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
 
-.github-img {
-  width: 30px;
-  height: 30px;
+.footer {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
 }
 
 button {
   display: none;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  button {
     display: block;
   }
 }
