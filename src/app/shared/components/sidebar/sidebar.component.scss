@@ -1,5 +1,7 @@
+@import "../../../../assets/variables";
+
 .sidebar {
-  background-color: #343a40;
+  background-color: $secondary-color;
   min-height: 100vh;
   transition: width 0.3s;
 }
@@ -27,8 +29,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  background-color: #007bff;
-  color: white;
+  color: $primary-color;
 }
 
 .footer {
@@ -63,16 +64,11 @@
 }
 
 .footer-link:hover {
-  color: #fff;
-}
-
-a {
-  color: #adb5bd;
-  text-decoration: none;
+  color: $primary-color;
 }
 
 a:hover {
-  color: #fff;
+  color: green;
 }
 
 button {
@@ -98,7 +94,7 @@ button {
     display: none;
   }
 
-   .footer {
+  .footer {
     display: none;
     font-size: 0.8rem;
   }
@@ -106,7 +102,6 @@ button {
   .footer-title {
     display: none;
   }
-
 
   .footer-item img {
     width: 30px;
