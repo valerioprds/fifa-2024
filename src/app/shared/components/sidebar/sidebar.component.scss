@@ -1,0 +1,118 @@
+@import "../../../../assets/variables";
+
+.sidebar {
+  background-color: $secondary-color;
+  min-height: 100vh;
+  transition: width 0.3s;
+}
+
+.img-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px; /* Adjust the size as needed */
+  transition: width 0.3s, height 0.3s;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: #adb5bd;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: $primary-color;
+}
+
+.footer {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  transition: font-size 0.3s;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-item img {
+  width: 40px;
+  height: 40px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: $primary-color;
+}
+
+a:hover {
+  color: green;
+}
+
+button {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+    font-size: 0.8rem;
+  }
+
+  .footer-title {
+    display: none;
+  }
+
+  .footer-item img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+  }
+
+  button {
+    display: block;
+  }
+}
