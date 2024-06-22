@@ -6,18 +6,17 @@ import { HomePageComponent } from './pages/home/home-page.component';
 import { DetailsPageComponent } from './pages/details/details-page.component';
 import { VideosPageComponent } from './pages/videos/videos-page.component';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { SidebarComponent } from '../../shared/components/sidebar/sidebar.component';
+import { CardPlayerComponent } from '../../shared/components/card-player/card-player.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     DetailsPageComponent,
-    VideosPageComponent
+    VideosPageComponent,
+    SidebarComponent,
+    CardPlayerComponent,
   ],
-  imports: [
-    CommonModule,
-    PlayersRoutingModule,
-    TranslateModule
-  ]
+  imports: [CommonModule, PlayersRoutingModule, TranslateModule],
 })
-export class PlayersModule { }
+export class PlayersModule {}
