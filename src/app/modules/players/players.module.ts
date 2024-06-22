@@ -5,6 +5,7 @@ import { PlayersRoutingModule } from './players-routing.module';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { DetailsPageComponent } from './pages/details/details-page.component';
 import { VideosPageComponent } from './pages/videos/videos-page.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { VideosPageComponent } from './pages/videos/videos-page.component';
   ],
   imports: [
     CommonModule,
-    PlayersRoutingModule
+    PlayersRoutingModule,
+    TranslateModule
   ]
 })
 export class PlayersModule { }
