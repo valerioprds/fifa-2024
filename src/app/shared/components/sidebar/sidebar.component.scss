@@ -116,3 +116,12 @@ button {
     display: block;
   }
 }
+
+.content {
+  display: flex;
+  border: 8px solid blue;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
