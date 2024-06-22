@@ -9,6 +9,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SidebarComponent } from '../../shared/components/sidebar/sidebar.component';
 import { CardPlayerComponent } from '../../shared/components/card-player/card-player.component';
 
+
+
+
 @NgModule({
   declarations: [
     HomePageComponent,
@@ -16,6 +19,7 @@ import { CardPlayerComponent } from '../../shared/components/card-player/card-pl
     VideosPageComponent,
     SidebarComponent,
     CardPlayerComponent,
+
   ],
   imports: [CommonModule, PlayersRoutingModule, TranslateModule],
 })
