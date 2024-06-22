@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackBtnComponent } from './shared/components/back-btn/back-btn.component';
-import { BreadcrumbsComponent } from './shared/components/breadcrumbs/breadcrumbs.component';
 import { LangBtnComponent } from './shared/components/lang-btn/lang-btn.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -14,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { PlayersModule } from './modules/players/players.module';
 import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 import { SpinnerComponent } from './shared/components/spinner/spinner.component';
+import { BreadcrumbsComponent } from './shared/components/breadcrumbs/breadcrumbs.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,9 +22,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-
-    BackBtnComponent,
     BreadcrumbsComponent,
+    BackBtnComponent,
+
     LangBtnComponent,
     NotFoundComponent,
     SpinnerComponent,

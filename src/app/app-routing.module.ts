@@ -15,10 +15,7 @@ const routes: Routes = [
         (mod) => mod.PlayersModule
       ),
   },
-  {
-    path: '**',
-    component: NotFoundComponent,
-  },
+
 
   { path: 'error', component: NotFoundComponent },
   { path: '**', redirectTo: 'error', pathMatch: 'full' },

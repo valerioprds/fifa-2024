@@ -1,1 +1,7 @@
-<p>breadcrumbs works!</p>
+<nav aria-label="breadcrumb" style="background-color: red">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" *ngFor="let item of menuItems">
+      <a [routerLink]="item.url">{{ item.label }}</a>
+    </li>
+  </ol>
+</nav>
