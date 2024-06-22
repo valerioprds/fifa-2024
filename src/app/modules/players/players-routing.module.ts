@@ -4,18 +4,44 @@ import { HomePageComponent } from './pages/home/home-page.component';
 import { DetailsPageComponent } from './pages/details/details-page.component';
 import { VideosPageComponent } from './pages/videos/videos-page.component';
 
+
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent,
-  },
-  {
-    path: 'details/:id',
-    component: DetailsPageComponent,
-  },
-  {
-    path: 'videos',
-    component: VideosPageComponent,
+    data: {
+      breadcrumb: 'Home',
+    },
+    children: [
+      {
+        path: '',
+        data: {
+          breadcrumb: null,
+        },
+        component: HomePageComponent,
+      },
+      {
+        path: 'details/:id',
+        data: {
+          breadcrumb: 'Details',
+        },
+        children: [
+          {
+            path: '',
+            data: {
+              breadcrumb: null,
+            },
+            component: DetailsPageComponent,
+          },
+          {
+            path: 'videos',
+            data: {
+              breadcrumb: 'Videos',
+            },
+            component: VideosPageComponent,
+          },
+        ],
+      },
+    ],
   },
 ];
 
