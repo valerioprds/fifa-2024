@@ -8,6 +8,7 @@ import { VideosPageComponent } from './pages/videos/videos-page.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { SidebarComponent } from '../../shared/components/sidebar/sidebar.component';
 import { CardPlayerComponent } from '../../shared/components/card-player/card-player.component';
+import { SheetComponent } from './pages/details/components/sheet/sheet.component';
 
 
 
@@ -19,6 +20,7 @@ import { CardPlayerComponent } from '../../shared/components/card-player/card-pl
     VideosPageComponent,
     SidebarComponent,
     CardPlayerComponent,
+    SheetComponent
 
   ],
   imports: [CommonModule, PlayersRoutingModule, TranslateModule],
