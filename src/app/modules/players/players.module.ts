@@ -17,7 +17,7 @@ import { SheetComponent } from './pages/details/components/sheet/sheet.component
     VideosPageComponent,
     SidebarComponent,
     CardPlayerComponent,
-    SheetComponent,
+    SheetComponent
   ],
   imports: [CommonModule, PlayersRoutingModule, TranslateModule],
 })
