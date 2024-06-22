@@ -1,0 +1,59 @@
+@import '../../../../assets/variables';
+
+.player-card {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: rotate(10deg);
+}
+
+.player-card:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.player-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.player-card:hover .player-image {
+  filter: brightness(50%);
+}
+
+.card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  color: $secondary-color;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-card:hover .card-body {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin: 5px 0;
+}
