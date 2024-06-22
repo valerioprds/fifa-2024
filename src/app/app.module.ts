@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
 import { PlayersModule } from './modules/players/players.module';
 import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
+import { SpinnerComponent } from './shared/components/spinner/spinner.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -26,6 +27,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BreadcrumbsComponent,
     LangBtnComponent,
     NotFoundComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
