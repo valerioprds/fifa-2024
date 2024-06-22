@@ -4,6 +4,7 @@
   background-color: $secondary-color;
   min-height: 100vh;
   transition: width 0.3s;
+  width: 100%;
 }
 
 .img-container {
@@ -13,9 +14,21 @@
 }
 
 .logo-img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   transition: width 0.3s, height 0.3s;
+}
+
+hr {
+  margin: 0.5rem 0; /* Ajusta el margen superior e inferior */
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-item {
+  width: 100%;
 }
 
 .nav-link {
@@ -25,6 +38,13 @@
   color: #adb5bd;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link span {
+  text-align: center;
 }
 
 .nav-link:hover,
@@ -119,9 +139,27 @@ button {
 
 .content {
   display: flex;
-  border: 8px solid blue;
   align-content: center;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-start;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.nav-link i {
+  font-size: 1.2rem; /* Asegura que todos los iconos tengan el mismo tamaño */
+  line-height: 1;
+  margin-right: 0.5rem; /* Ajusta este valor según el espacio deseado */
+}
+
+.nav-link span {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }

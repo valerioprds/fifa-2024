@@ -13,6 +13,6 @@ export class HomePageComponent {
 
   ngOnInit(): void {
     this.players = this.playerService.getPlayers();
-    console.log(this.players)
+    // console.log(this.players)
   }
 }
