@@ -10,9 +10,6 @@ import { SidebarComponent } from '../../shared/components/sidebar/sidebar.compon
 import { CardPlayerComponent } from '../../shared/components/card-player/card-player.component';
 import { SheetComponent } from './pages/details/components/sheet/sheet.component';
 
-
-
-
 @NgModule({
   declarations: [
     HomePageComponent,
@@ -21,7 +18,6 @@ import { SheetComponent } from './pages/details/components/sheet/sheet.component
     SidebarComponent,
     CardPlayerComponent,
     SheetComponent
-
   ],
   imports: [CommonModule, PlayersRoutingModule, TranslateModule],
 })
