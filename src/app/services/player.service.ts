@@ -1,9 +1,31 @@
 import { Injectable } from '@angular/core';
+import { Player } from '../modules/core/classes/Player';
+import { playersData } from '../../assets/data/PlayersData';
+import { IPlayer } from '../modules/core/models/IPlayer.interface';
+
+type PlayerId = `${string}-${string}-${string}-${string}-${string}`;
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PlayerService {
+  private players: Player[] = [];
 
-  constructor() { }
+  constructor() {
+    this.initializePlayers()
+  }
+
+  private initializePlayers():void {
+    playersData.forEach((playerConfig: IPlayer) => {
+      this.players.push(new Player(playerConfig));
+    });
+  }
+
+  public getPlayers():Player[] {
+    return this.players;
+  }
+
+  public getPlayerById(id: PlayerId):Player | undefined {
+    return this.players.find((player: Player) => player.id === id);
+  }
 }
