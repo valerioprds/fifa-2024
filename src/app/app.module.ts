@@ -14,6 +14,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
 import { PlayersModule } from './modules/players/players.module';
+import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BackBtnComponent,
     BreadcrumbsComponent,
     LangBtnComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
