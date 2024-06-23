@@ -8,6 +8,8 @@ export class Player extends Person implements IPlayer {
   position: EPosition;
   club: string;
   number: number;
+  imgUrl: string;
+  videosUrl: string[];
   attributes: IAttributes;
 
   constructor(config: IPlayer) {
@@ -16,6 +18,8 @@ export class Player extends Person implements IPlayer {
     this.position = config.position;
     this.club = config.club;
     this.number = config.number;
+    this.imgUrl = config.imgUrl;
+    this.videosUrl = config.videosUrl;
     this.attributes = config.attributes;
   }
 }
