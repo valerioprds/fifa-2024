@@ -1,18 +1,10 @@
 <div class="btn-group" role="group" aria-label="Language selector">
-  <button
-    type="button"
-    class="btn btn-flag"
-    (click)="selectedLanguage = 'en'; onLanguageChange()"
-  >
-    <img src="/assets/flags/en.png" alt="English" class="flag-icon" />
+  <button type="button" class="btn btn-flag" (click)="onLanguageChange('en')">
+    <img src="assets/flags/en.png" alt="English" class="flag-icon" />
     English
   </button>
-  <button
-    type="button"
-    class="btn btn-flag"
-    (click)="selectedLanguage = 'es'; onLanguageChange()"
-  >
-    <img src="/assets/flags/es.png" alt="Español" class="flag-icon" />
+  <button type="button" class="btn btn-flag" (click)="onLanguageChange('es')">
+    <img src="assets/flags/es.png" alt="Español" class="flag-icon" />
     Español
   </button>
 </div>
