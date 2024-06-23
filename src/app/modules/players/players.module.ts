@@ -9,7 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SidebarComponent } from '../../shared/components/sidebar/sidebar.component';
 import { CardPlayerComponent } from '../../shared/components/card-player/card-player.component';
 import { SheetComponent } from './pages/details/components/sheet/sheet.component';
-//import { BreadcrumbsComponent } from '../../shared/components/breadcrumbs/breadcrumbs.component';
+import { BreadcrumbComponent, BreadcrumbItemDirective } from 'xng-breadcrumb';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,12 @@ import { SheetComponent } from './pages/details/components/sheet/sheet.component
     CardPlayerComponent,
     SheetComponent,
   ],
-  imports: [CommonModule, PlayersRoutingModule, TranslateModule],
+  imports: [
+    CommonModule,
+    PlayersRoutingModule,
+    TranslateModule,
+    BreadcrumbComponent,
+    BreadcrumbItemDirective,
+  ],
 })
 export class PlayersModule {}
