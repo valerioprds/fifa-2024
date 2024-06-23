@@ -12,6 +12,13 @@ export const playersData: IPlayer[] = [
     position: EPosition.FORWARD,
     club: 'Paris Saint-Germain',
     number: 7,
+    imgUrl:
+      'https://imgs.search.brave.com/WZ12aL01zf_hVEEIKO82L-WDWsQMdaK6a7SKrwR83xk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQva3lsaWFuLW1i/YXBwZS1jeW5zZXNx/ejM0azUzOHdmLmpw/Zw',
+    videosUrl: [
+      'https://www.youtube.com/shorts/lYH1zm_qcwY',
+      'https://www.youtube.com/shorts/BkX0dvLBzf0',
+      'https://www.youtube.com/shorts/a7BOwi0ikV4',
+    ],
     attributes: {
       pace: {
         acceleration: 99,
@@ -66,6 +73,12 @@ export const playersData: IPlayer[] = [
     position: EPosition.FORWARD,
     club: 'Manchester City',
     number: 9,
+    imgUrl: 'https://miro.medium.com/v2/resize:fit:920/0*8_nTFD8EehR01iPc.jpg',
+    videosUrl: [
+      'https://www.youtube.com/shorts/g27g0gJn71E',
+      'https://www.youtube.com/shorts/uAzmE2WR3WU',
+      'https://www.youtube.com/shorts/gpDk-uLrRlw',
+    ],
     attributes: {
       pace: {
         acceleration: 92,
@@ -111,19 +124,26 @@ export const playersData: IPlayer[] = [
     },
   },
   {
-    id: "123e4567-e89b-12d3-a456-426614174006",
-    name: "Jude Bellingham",
-    age: 21, 
-    nationality: "English",
-    height: 185, 
-    weight: 80, 
+    id: '123e4567-e89b-12d3-a456-426614174006',
+    name: 'Jude Bellingham',
+    age: 21,
+    nationality: 'English',
+    height: 185,
+    weight: 80,
     position: EPosition.MIDFIELDER,
-    club: "Borussia Dortmund",
+    club: 'Borussia Dortmund',
     number: 22,
+    imgUrl:
+      'https://imgs.search.brave.com/vb5Y9Y8w8zsaJlRw-fURaTb5Z2092lU_jl-kYN8kg-k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDEzNTI4/NzkzLmpwZw',
+    videosUrl: [
+      'https://www.youtube.com/shorts/xjZfjTne0rg',
+      'https://www.youtube.com/shorts/GIMKzikZ--A',
+      'https://www.youtube.com/shorts/1Ad0vVNRnZE',
+    ],
     attributes: {
       pace: {
         acceleration: 94,
-        sprintSpeed: 92
+        sprintSpeed: 92,
       },
       shooting: {
         attPosition: 97,
@@ -131,7 +151,7 @@ export const playersData: IPlayer[] = [
         shotPower: 96,
         longShots: 91,
         volleys: 87,
-        penalties: 70
+        penalties: 70,
       },
       passing: {
         vision: 98,
@@ -139,7 +159,7 @@ export const playersData: IPlayer[] = [
         fkAcc: 57,
         shortPass: 99,
         longPass: 99,
-        curve: 85
+        curve: 85,
       },
       dribbling: {
         agility: 97,
@@ -147,21 +167,21 @@ export const playersData: IPlayer[] = [
         reactions: 99,
         ballControl: 99,
         dribbling: 99,
-        composure: 97
+        composure: 97,
       },
       defending: {
         interceptions: 97,
         headingAcc: 81,
         defAware: 91,
         standTackle: 93,
-        slideTackle: 91
+        slideTackle: 91,
       },
       physical: {
         jumping: 93,
         stamina: 99,
         strength: 90,
-        aggression: 98
-      }
-    }
-  }
+        aggression: 98,
+      },
+    },
+  },
 ];

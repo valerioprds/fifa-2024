@@ -7,5 +7,7 @@ export interface IPlayer extends IPerson {
   position: EPosition;
   club: string;
   number: number;
+  imgUrl: string;
+  videosUrl: string[];
   attributes: IAttributes;
 }
