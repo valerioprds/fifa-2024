@@ -1,13 +1,29 @@
-<router-outlet></router-outlet>
-
-
-<!-- <div>{{ "HELLO" | translate }}</div>
- --><select
+<!-- <select
   class="px-3 py-1"
   [(ngModel)]="selectedLanguage"
   (change)="onLanguageChange()"
 >
   <option value="en">English</option>
   <option value="es">Castellano</option>
-</select>
+</select> -->
 
+<div class="container-fluid">
+  <div class="row flex-nowrap px-0">
+    <div class="col-3 p-0">
+      <app-sidebar />
+    </div>
+    <div class="col-9">
+      <div class="row">
+        <div class="col-3 border">
+          <app-bread-crumb/>
+        </div>
+        <div class="col-9 border">
+          <app-lang-btn/>
+        </div>
+      </div>
+      <div class="row">
+        <router-outlet/>
+      </div>
+    </div>
+  </div>
+</div>

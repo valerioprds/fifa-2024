@@ -8,21 +8,21 @@ const routes: Routes = [
   {
     path: '',
     component: HomePageComponent,
-    children: [
-      {
-        path: 'details/:id',
-        component: DetailsPageComponent,
-        data: { breadcrumb: 'details' },
-        children: [
-          {
-            path: 'videos',
-            component: VideosPageComponent,
-          },
-        ],
-      },
-    ],
+    data: { breadcrumb: 'home' },
+  },
+  {
+    path: 'details/:id',
+    component: DetailsPageComponent,
+    data: { breadcrumb: 'details' },
+  },
+  {
+    path: 'details/:id/videos',
+    component: VideosPageComponent,
+    data: { breadcrumb: 'videos' },
   },
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -1,3 +1,7 @@
-<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-  <xng-breadcrumb></xng-breadcrumb>
+<nav aria-label="breadcrumb">
+  <xng-breadcrumb separator=">">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
 </nav>

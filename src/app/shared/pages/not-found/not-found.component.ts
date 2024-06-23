@@ -15,7 +15,7 @@ export class NotFoundComponent {
   goHome() {
     this.loading = true;
     setTimeout(() => {
-      this.router.navigate(['/home']);
-    }, 2000); // 2 seconds delay
+      this.router.navigate(['/']);
+    }, 1000); // 1 seconds delay
   }
 }
