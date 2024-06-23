@@ -6,6 +6,9 @@
     "MoreVideos": "More Videos",
     "LatestNews": "Latest News",
     "DeveloppedBy": "Developped by"
+  },
+  "error": {
+    "404": "Page not found"
   }
 
 }
