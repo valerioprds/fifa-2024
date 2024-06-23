@@ -1,1 +1,9 @@
-<p>videos-page works!</p>
+<div class="video-gallery">
+  <div class="video-container" *ngFor="let videoId of videoIds">
+    <iframe
+      [src]="getVideoUrl(videoId)"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
