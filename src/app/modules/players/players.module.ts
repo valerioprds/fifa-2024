@@ -10,6 +10,7 @@ import { SidebarComponent } from '../../shared/components/sidebar/sidebar.compon
 import { CardPlayerComponent } from '../../shared/components/card-player/card-player.component';
 import { SheetComponent } from './pages/details/components/sheet/sheet.component';
 import { BreadcrumbComponent, BreadcrumbItemDirective } from 'xng-breadcrumb';
+import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-crumb.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BreadcrumbComponent, BreadcrumbItemDirective } from 'xng-breadcrumb';
     SidebarComponent,
     CardPlayerComponent,
     SheetComponent,
+    BreadCrumbComponent,
   ],
   imports: [
     CommonModule,

@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { PlayersModule } from './modules/players/players.module';
 import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 import { SpinnerComponent } from './shared/components/spinner/spinner.component';
-import { BreadcrumbsComponent } from './shared/components/breadcrumbs/breadcrumbs.component';
+import { BreadcrumbComponent, BreadcrumbItemDirective } from 'xng-breadcrumb';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,9 +22,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    BreadcrumbsComponent,
     BackBtnComponent,
-
     LangBtnComponent,
     NotFoundComponent,
     SpinnerComponent,
@@ -35,6 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PlayersModule,
     AppRoutingModule,
     HttpClientModule,
+    BreadcrumbComponent,
+    BreadcrumbItemDirective,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
