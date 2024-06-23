@@ -1,3 +1,14 @@
 {
-  "HELLO": "hola"
+  "HELLO": "Hola",
+  "sidebar": {
+    "Register": "Registrar/Iniciar Sesión",
+    "StarPlayers": "Jugadores Estrella",
+    "MoreVideos": "Más Videos",
+    "LatestNews": "Últimas Noticias",
+    "DeveloppedBy": "Desarrollado por"
+  },
+  "error": {
+    "404": "Pagina no encontrada",
+    "goToHome": "Ir a la página de inicio"
+  }
 }

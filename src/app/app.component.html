@@ -1,12 +1,3 @@
-<!-- <select
-  class="px-3 py-1"
-  [(ngModel)]="selectedLanguage"
-  (change)="onLanguageChange()"
->
-  <option value="en">English</option>
-  <option value="es">Castellano</option>
-</select> -->
-
 <div class="container-fluid">
   <div class="row flex-nowrap px-0">
     <div class="col-3 p-0">
@@ -14,15 +5,16 @@
     </div>
     <div class="col-9">
       <div class="row">
-        <div class="col-3 border">
-          <app-bread-crumb></app-bread-crumb>
+        <div class="col-3 mt-2">
+          <app-bread-crumb />
         </div>
-        <div class="col-9 border">
-          <app-lang-btn></app-lang-btn>
+        <div class="col-9 mt-2 d-flex flex-nowrap justify-content-end">
+          <app-lang-btn />
         </div>
       </div>
       <div class="row">
-        <router-outlet></router-outlet>
+        <router-outlet />
+
       </div>
     </div>
   </div>

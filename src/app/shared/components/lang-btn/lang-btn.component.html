@@ -1,1 +1,10 @@
-<p>lang-btn works!</p>
+<div class="btn-group" role="group" aria-label="Language selector">
+  <button type="button" class="btn btn-flag" (click)="changeLanguage('en')">
+    <img src="assets/flags/en.png" alt="English" class="flag-icon" />
+    English
+  </button>
+  <button type="button" class="btn btn-flag" (click)="changeLanguage('es')">
+    <img src="assets/flags/es.png" alt="Español" class="flag-icon" />
+    Español
+  </button>
+</div>
