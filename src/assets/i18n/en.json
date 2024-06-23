@@ -1,3 +1,10 @@
 {
-  "HELLO": "Hello"
+  "HELLO": "Hello",
+  "sidebar": {
+    "Register": "Register/Login",
+    "StarPlayers": "Star Players",
+    "MoreVideos": "More Videos",
+    "LatestNews": "Latest News",
+    "DeveloppedBy": "Developped by"
+  }
 }
