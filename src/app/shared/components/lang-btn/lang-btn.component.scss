@@ -1,0 +1,20 @@
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-flag {
+  position: relative;
+  padding-left: 40px; /* Espacio para la bandera */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.flag-icon {
+  position: absolute;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
