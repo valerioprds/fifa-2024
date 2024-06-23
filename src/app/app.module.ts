@@ -26,7 +26,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     BackBtnComponent,
-    // LangBtnComponent,
     NotFoundComponent,
     SpinnerComponent,
     SidebarComponent,

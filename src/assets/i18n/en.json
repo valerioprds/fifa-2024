@@ -8,7 +8,7 @@
     "DeveloppedBy": "Developped by"
   },
   "error": {
-    "404": "Page not found"
+    "404": "Page not found",
+    "goToHome": "go to home page"
   }
-
 }

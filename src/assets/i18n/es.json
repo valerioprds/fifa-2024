@@ -8,6 +8,7 @@
     "DeveloppedBy": "Desarrollado por"
   },
   "error": {
-    "404": "Pagina no encontrada"
+    "404": "Pagina no encontrada",
+    "goToHome": "Ir a la página de inicio"
   }
 }
