@@ -73,7 +73,7 @@ export const playersData: IPlayer[] = [
     position: EPosition.FORWARD,
     club: 'Manchester City',
     number: 9,
-    imgUrl: 'https://miro.medium.com/v2/resize:fit:920/0*8_nTFD8EehR01iPc.jpg',
+    imgUrl: 'https://i.pinimg.com/736x/ed/e8/e3/ede8e34fc508c8d369cb4570071cb092.jpg',
     videosUrl: [
       'https://www.youtube.com/shorts/g27g0gJn71E',
       'https://www.youtube.com/shorts/uAzmE2WR3WU',

@@ -1,6 +1,6 @@
 export enum EPosition {
-  GOALKEEPER,
-  DEFENDER,
-  MIDFIELDER,
-  FORWARD,
+  GOALKEEPER = 'Goalkeeper',
+  DEFENDER = 'Defender',
+  MIDFIELDER = 'Midfielder',
+  FORWARD = 'Forward',
 }
