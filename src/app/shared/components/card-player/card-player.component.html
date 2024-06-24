@@ -1,16 +1,18 @@
-<div class="player-card d-flex">
-  <img class="player-image" [src]="player?.imgUrl" [alt]="player?.name" />
-  <div class="card-body">
-    <h5 class="card-title">
-      <span style="font-weight: 400">{{ player?.number }} - </span>
-      {{ player?.name }}
-    </h5>
-    <hr />
-    <p class="card-text">Age: {{ player?.age }}</p>
-    <p class="card-text">Position: {{ player?.position }}</p>
-    <p class="card-text">Nationality: {{ player?.nationality }}</p>
-    <p class="card-text">Height: {{ player?.height }} cm</p>
-    <p class="card-text">Weight: {{ player?.weight }} kg</p>
-    <p class="card-text">Club: {{ player?.club }}</p>
+<a [routerLink]="['/details', player?.id]">
+  <div class="player-card d-flex">
+    <img class="player-image" [src]="player?.imgUrl" [alt]="player?.name" />
+    <div class="card-body">
+      <h5 class="card-title">
+        <span style="font-weight: 400">{{ player?.number }} - </span>
+        {{ player?.name }}
+      </h5>
+      <hr />
+      <p class="card-text">Age: {{ player?.age }}</p>
+      <p class="card-text">Position: {{ player?.position }}</p>
+      <p class="card-text">Nationality: {{ player?.nationality }}</p>
+      <p class="card-text">Height: {{ player?.height }} cm</p>
+      <p class="card-text">Weight: {{ player?.weight }} kg</p>
+      <p class="card-text">Club: {{ player?.club }}</p>
+    </div>
   </div>
-</div>
+</a>

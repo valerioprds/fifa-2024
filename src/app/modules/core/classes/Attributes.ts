@@ -22,4 +22,28 @@ export class Attributes implements IAttributes {
     this.defending = config.defending;
     this.physical = config.physical;
   }
+
+  private calculateAverageAttributes(attribute: object) {
+    const values = Object.values(attribute);
+    const sum = values.reduce((acc, val) => acc + val, 0);
+    return sum / values.length;
+  }
+
+  public getAverages(): Record<string, number> {
+    const paceStat = this.calculateAverageAttributes(this.pace);
+    const shootingStat = this.calculateAverageAttributes(this.shooting);
+    const passingStat = this.calculateAverageAttributes(this.passing);
+    const dribblingStats = this.calculateAverageAttributes(this.dribbling);
+    const defendingStats = this.calculateAverageAttributes(this.defending);
+    const physicalStats = this.calculateAverageAttributes(this.physical);
+
+    return {
+      Pace: parseFloat(paceStat.toFixed(2)),
+      Shooting: parseFloat(shootingStat.toFixed(2)),
+      Passing: parseFloat(passingStat.toFixed(2)),
+      Dribbling: parseFloat(dribblingStats.toFixed(2)),
+      Defending: parseFloat(defendingStats.toFixed(2)),
+      Physical: parseFloat(physicalStats.toFixed(2)),
+    };
+  }
 }

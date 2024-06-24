@@ -1,4 +1,11 @@
 @if (!isVideosPage()) {
-  <app-sheet></app-sheet>
+  <div class="row">
+    <div class="col-5">
+      <app-card-player [player]="player" />
+    </div>
+    <div class="col-6">
+      <app-sheet [averages]="averages" />
+    </div>
+  </div>
 }
 <router-outlet></router-outlet>
