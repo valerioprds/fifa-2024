@@ -1,25 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-videos-page',
   templateUrl: './videos-page.component.html',
-  styleUrl: './videos-page.component.scss',
+  styleUrls: ['./videos-page.component.scss'],
 })
-export class VideosPageComponent {
-  videoIds: string[] = [
-    'dQw4w9WgXcQ', // Example video IDs
-    '9bZkp7q19f0',
-    'tVj0ZTS4WF4',
-  ];
+export class VideosPageComponent implements OnInit {
+  videoUrls: SafeResourceUrl[] = [];
 
-  constructor(private sanitizer: DomSanitizer) {}
+  private route = inject(ActivatedRoute);
+  private sanitizer = inject(DomSanitizer);
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((params) => {
+      if (params['videos']) {
+        const videos = JSON.parse(decodeURIComponent(params['videos']));
+        this.videoUrls = videos.map((url: string) => this.getSafeVideoUrl(url));
+        console.log('Videos:', this.videoUrls); // Debugging line
+      }
+    });
+  }
 
-  getVideoUrl(videoId: string): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(
-      `https://www.youtube.com/embed/${videoId}`
-    );
+  getSafeVideoUrl(url: string): SafeResourceUrl {
+    const videoId = this.extractVideoId(url);
+    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    console.log(videoId + ' ' + embedUrl); // Debugging line
+
+    return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
+  }
+
+  private extractVideoId(url: string): string {
+    const regex =
+      /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/|youtube.com\/shorts\/)([a-zA-Z0-9_-]{11})/;
+    const matches = url.match(regex);
+    return matches ? matches[1] : '';
   }
 }

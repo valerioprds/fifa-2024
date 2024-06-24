@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tooltip } from 'bootstrap';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,13 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {
-  isOpen = false;
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  toggleSidebar(): void {
-    this.isOpen = !this.isOpen;
+  ngOnInit(): void {
+    const tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map((tooltipTriggerEl) => new Tooltip(tooltipTriggerEl));
   }
 }
