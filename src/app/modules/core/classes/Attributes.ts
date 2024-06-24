@@ -15,12 +15,37 @@ export class Attributes implements IAttributes {
   physical: IPhysical;
 
   constructor(config: IAttributes) {
+    this.ValidateAttributesConfig(config);
     this.pace = config.pace;
     this.shooting = config.shooting;
     this.passing = config.passing;
     this.dribbling = config.dribbling;
     this.defending = config.defending;
     this.physical = config.physical;
+  }
+
+  private ValidateAttributesConfig(config: IAttributes): void {
+    const attributeNames = [
+      'pace',
+      'shooting',
+      'passing',
+      'dribbling',
+      'defending',
+      'physical',
+    ];
+
+    for (const attributeName of attributeNames) {
+      const attribute = config[attributeName as keyof IAttributes];
+      if (typeof attribute !== 'object' || attribute === null) {
+        throw new Error(`Invalid ${attributeName} attribute`);
+      }
+
+      for (const [key, value] of Object.entries(attribute)) {
+        if (typeof value !== 'number' || value < 0) {
+          throw new Error(`Invalid value for ${attributeName}.${key}`);
+        }
+      }
+    }
   }
 
   private calculateAverageAttributes(attribute: object) {
