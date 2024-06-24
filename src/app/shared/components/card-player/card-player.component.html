@@ -7,12 +7,24 @@
         {{ player?.name }}
       </h5>
       <hr />
-      <p class="card-text">Age: {{ player?.age }}</p>
-      <p class="card-text">Position: {{ player?.position }}</p>
-      <p class="card-text">Nationality: {{ player?.nationality }}</p>
-      <p class="card-text">Height: {{ player?.height }} cm</p>
-      <p class="card-text">Weight: {{ player?.weight }} kg</p>
-      <p class="card-text">Club: {{ player?.club }}</p>
+      <p class="card-text">
+        {{ "cardPlayer.age" | translate }} : {{ player?.age }}
+      </p>
+      <p class="card-text">
+        {{ "cardPlayer.position" | translate }}: {{ player?.position }}
+      </p>
+      <p class="card-text">
+        {{ "cardPlayer.nationality" | translate }}: {{ player?.nationality }}
+      </p>
+      <p class="card-text">
+        {{ "cardPlayer.height" | translate }}: {{ player?.height }} cm
+      </p>
+      <p class="card-text">
+        {{ "cardPlayer.weight" | translate }}: {{ player?.weight }} kg
+      </p>
+      <p class="card-text">
+        {{ "cardPlayer.club" | translate }}: {{ player?.club }}
+      </p>
     </div>
   </div>
 </a>

@@ -10,5 +10,16 @@
   "error": {
     "404": "Page not found",
     "goToHome": "Go to home page"
+  },
+  "videos": {
+    "noVideos": "No videos found"
+  },
+  "cardPlayer": {
+    "age": "Age",
+    "position": "Position",
+    "nationality": "Nationality",
+    "height": "Height",
+    "weight": "Weight",
+    "club": "Club"
   }
 }
