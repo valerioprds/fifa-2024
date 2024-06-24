@@ -1,0 +1,7 @@
+<div class="row p-0">
+  @for (player of players; track player.id) {
+  <div class="col-4">
+    <app-card-player [player]="player" />
+  </div>
+  }
+</div>

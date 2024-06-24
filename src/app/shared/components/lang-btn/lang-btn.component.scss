@@ -1,0 +1,36 @@
+@import "../../../../assets/variables.scss";
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-flag {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 5px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $secondary-color;
+  }
+}
+
+.flag-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 25px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: rotate(10deg);
+  }
+}
