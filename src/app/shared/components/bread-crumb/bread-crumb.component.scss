@@ -2,23 +2,34 @@
 
 .breadcrumb {
   background-color: $secondary-color;
-  color: #fff; /* Fondo oscuro */
+  color: #fff;
   padding: 10px 15px;
   border-radius: 18px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 40px; /* Altura fija deseada */
+  overflow: hidden; /* Para asegurarse de que el contenido no se desborde */
+  display: flex; /* Usa flexbox para alinear elementos */
+  align-items: center; /* Centra verticalmente el contenido */
 }
 
 .breadcrumb-item {
+  display: flex; /* Asegura que el ítem sea un flex container */
+  align-items: center; /* Centra verticalmente el contenido del ítem */
   font-size: 14px;
-  text-transform: uppercase; /* Transforma el texto a mayúsculas */
-  letter-spacing: 1px; /* Espaciado entre letras */
+  letter-spacing: 1px;
 }
 
 .breadcrumb-item a {
-  color: #fff; /* Color del enlace */
-  text-decoration: none; /* Sin subrayado */
+  color: #fff;
+  text-decoration: none;
 }
 
 .breadcrumb-item.active {
-  color: #ffc107; /* Color del texto activo */
+  color: #ffc107;
+}
+
+.fa-house {
+  /* Ajusta el icono de la casa si es necesario */
+  font-size: 16px; /* Tamaño del icono */
+  margin-right: 5px; /* Margen derecho para separar el icono del texto */
 }

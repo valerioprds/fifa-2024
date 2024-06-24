@@ -1,8 +1,10 @@
-<nav aria-label="breadcrumb" class="breadcrumb py-2">
+<nav aria-label="breadcrumb" class="breadcrumb">
   <xng-breadcrumb>
     <ng-container *xngBreadcrumbItem="let breadcrumb; let info = info; let first = first">
-    <i class="fa-solid fa-house" *ngIf="info"></i>
-    <ng-container *ngIf="!first">{{ breadcrumb | translate}}</ng-container>
-  </ng-container>
-</xng-breadcrumb>
+      <div class="breadcrumb-item">
+        <i class="fa-solid fa-house" *ngIf="info"></i>
+        <ng-container *ngIf="!first">{{ breadcrumb | translate}}</ng-container>
+      </div>
+    </ng-container>
+  </xng-breadcrumb>
 </nav>

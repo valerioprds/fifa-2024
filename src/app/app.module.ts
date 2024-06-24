@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BackBtnComponent } from './shared/components/back-btn/back-btn.component';
+// import { BackBtnComponent } from './shared/components/back-btn/back-btn.component';
 // import { LangBtnComponent } from './shared/components/lang-btn/lang-btn.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -25,7 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    BackBtnComponent,
+    // BackBtnComponent,
     NotFoundComponent,
     SpinnerComponent,
     SidebarComponent,

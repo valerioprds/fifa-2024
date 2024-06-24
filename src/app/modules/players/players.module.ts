@@ -11,6 +11,7 @@ import { CardPlayerComponent } from '../../shared/components/card-player/card-pl
 import { SheetComponent } from './pages/details/components/sheet/sheet.component';
 // import { BreadcrumbComponent, BreadcrumbItemDirective } from 'xng-breadcrumb';
 import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-crumb.component';
+import { BackBtnComponent } from '../../shared/components/back-btn/back-btn.component';
 // import { LangBtnComponent } from '../../shared/components/lang-btn/lang-btn.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-c
     SheetComponent,
     // BreadCrumbComponent,
     // LangBtnComponent
+    BackBtnComponent
   ],
   imports: [
     CommonModule,
