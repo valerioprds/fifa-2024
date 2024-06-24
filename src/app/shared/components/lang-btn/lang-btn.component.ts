@@ -7,7 +7,7 @@ import { LanguageService } from '../../../services/language.service';
   templateUrl: './lang-btn.component.html',
   styleUrl: './lang-btn.component.scss',
 })
-export class LangBtnComponent{
+export class LangBtnComponent {
   constructor(private languageService: LanguageService) {}
 
   changeLanguage(language: string) {

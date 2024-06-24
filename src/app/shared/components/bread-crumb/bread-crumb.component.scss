@@ -6,12 +6,27 @@
   padding: 10px 15px;
   border-radius: 18px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align for better responsiveness */
+  width: 100%; /* Ensure it takes full width */
+  max-height: 150px; /* Limit height to prevent overflow */
+  @media (max-width: 768px) {
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+    font-size: 12px; /* Adjust font size for readability */
+  }
 }
 
 .breadcrumb-item {
   font-size: 14px;
   text-transform: uppercase; /* Transforma el texto a mayúsculas */
   letter-spacing: 1px; /* Espaciado entre letras */
+  margin: 0 5px; /* Add margin for spacing between items */
+
+  @media (max-width: 768px) {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    margin: 0 3px; /* Adjust margin for better fit */
+  }
 }
 
 .breadcrumb-item a {
