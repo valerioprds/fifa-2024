@@ -1,11 +1,14 @@
-@if (!isVideosPage()) {
+<div *ngIf="!isVideosPage()">
   <div class="row">
     <div class="col-5">
-      <app-card-player [player]="player" />
+      <app-card-player [player]="player"></app-card-player>
     </div>
     <div class="col-6">
-      <app-sheet [averages]="averages" />
+      <app-sheet [averages]="averages"></app-sheet>
+      <button (click)="goToVideosPage()" class="btn btn-primary">
+        Ver Videos
+      </button>
     </div>
   </div>
-}
+</div>
 <router-outlet></router-outlet>
