@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sheet',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './sheet.component.scss'
 })
 export class SheetComponent {
+  @Input() averages: { [key: string]: number } | null = null
 
+  get averagesKeys(): string[] {
+    return this.averages ? Object.keys(this.averages) : [];
+  }
 }
