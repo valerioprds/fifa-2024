@@ -25,8 +25,8 @@ export class DetailsPageComponent implements OnInit {
       const heroId: PlayerId = id as PlayerId;
       this.player = this.playerService.getPlayerById(heroId) as IPlayer;
       this.averages = this.playerService.getPlayerAverages(heroId);
-      this.videos = this.player.videosUrl || []; // Assuming videosUrl is an array of video links
-      console.log(id, this.player, this.videos);
+      this.videos = this.player.videosUrl || [];
+      console.log('Player videos:', this.videos); // Debugging line
     } else {
       // manejar el caso donde id es null
     }
@@ -37,15 +37,10 @@ export class DetailsPageComponent implements OnInit {
   }
 
   goToVideosPage(): void {
-    console.log('Navigating with videos:', this.videos);
+    const encodedVideos = encodeURIComponent(JSON.stringify(this.videos));
     this.router.navigate(['videos'], {
       relativeTo: this.route,
-      state: { videos: this.videos }
+      queryParams: { videos: encodedVideos },
     });
   }
-
-
-  /* Esto es importante porque videos es una ruta hija de la ruta actual (details/:id). Sin relativeTo,
-   Angular intentaría navegar a la ruta 'videos' desde la raíz de la aplicación,
-   lo cual no es lo que queremos. */
 }

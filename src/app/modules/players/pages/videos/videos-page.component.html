@@ -1,5 +1,4 @@
-<h1>videos page</h1>
-<div *ngIf="videoUrls!.length > 0; else noVideos">
+<div *ngIf="videoUrls.length > 0; else noVideos">
   <div *ngFor="let url of videoUrls">
     <iframe [src]="url" frameborder="0" allowfullscreen></iframe>
   </div>
