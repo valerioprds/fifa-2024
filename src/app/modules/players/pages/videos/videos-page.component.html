@@ -1,8 +1,8 @@
-<div *ngIf="videoUrls.length > 0; else noVideos">
-  <div *ngFor="let url of videoUrls">
+<div *ngIf="videoUrls.length > 0; else noVideos" class="video-container">
+  <div *ngFor="let url of videoUrls" class="video-item">
     <iframe [src]="url" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 <ng-template #noVideos>
-  <p>No videos available.</p>
+  <p class="no-videos-message">No videos available.</p>
 </ng-template>
