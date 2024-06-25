@@ -5,14 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
-export class SidebarComponent {
-  isOpen = false;
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  toggleSidebar(): void {
-    this.isOpen = !this.isOpen;
-  }
-}
+export class SidebarComponent {}

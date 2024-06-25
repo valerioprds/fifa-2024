@@ -1,24 +1,29 @@
-.video-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 480px; /* Adjust the max-width as per your requirement */
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
+.video-item {
+  aspect-ratio: 9 / 16;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  height: 450px;
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+iframe {
   width: 100%;
   height: 100%;
   border: none;
+  border-radius: 8px;
 }
+
+.no-videos-message {
+  font-size: 18px;
+  color: #666;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+

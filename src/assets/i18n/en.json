@@ -9,6 +9,14 @@
   },
   "error": {
     "404": "Page not found",
-    "goToHome": "go to home page"
+    "goToHome": "Go to home page"
+  },
+  "cardPlayer": {
+    "age": "Age",
+    "position": "Position",
+    "nationality": "Nationality",
+    "height": "Height",
+    "weight": "Weight",
+    "club": "Club"
   }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-back-btn',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './back-btn.component.scss'
 })
 export class BackBtnComponent {
+  private location = inject(Location)
+
+  goBack() {
+    this.location.back()
+  }
 
 }

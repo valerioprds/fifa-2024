@@ -1,9 +1,21 @@
-<div class="video-gallery">
-  <div class="video-container" *ngFor="let videoId of videoIds">
-    <iframe
-      [src]="getVideoUrl(videoId)"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+<div class="container my-5">
+  <div *ngIf="videoUrls.length > 0; else noVideos" class="row">
+    <div *ngFor="let url of videoUrls" class="col-md-4 mb-4">
+      <div class="video-item">
+        <iframe [src]="url" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-3">
+    <div class="col-12 d-flex justify-content-center">
+      <app-back-btn></app-back-btn>
+    </div>
   </div>
 </div>
+
+<ng-template #noVideos>
+  <div class="alert alert-warning no-videos-message text-center" role="alert">
+    {{ "noVideos" | translate }}.
+  </div>
+</ng-template>

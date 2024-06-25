@@ -136,7 +136,7 @@ export const playersData: IPlayer[] = [
     imgUrl:
       'https://imgs.search.brave.com/vb5Y9Y8w8zsaJlRw-fURaTb5Z2092lU_jl-kYN8kg-k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDEzNTI4/NzkzLmpwZw',
     videosUrl: [
-      'https://www.youtube.com/shorts/xjZfjTne0rg',
+      'https://www.youtube.com/shorts/0pbYM5l8aNY',
       'https://www.youtube.com/shorts/GIMKzikZ--A',
       'https://www.youtube.com/shorts/1Ad0vVNRnZE',
     ],
