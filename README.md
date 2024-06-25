@@ -120,11 +120,11 @@ Here is an example of the different responsive views of the application:
 
 ### Details page
 
-![Details Page](./src/assets/screenshots/details-responsive.PNG)
+![Details Page](./src/assets/images/details-responsive.PNG)
 
 ### Videos page
 
-![Videos page](./src/assets/screenshots/videos-responsive.PNG)
+![Videos page](./src/assets/images/videos-responsive.PNG)
 
 
 
