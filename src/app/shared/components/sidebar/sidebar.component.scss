@@ -2,9 +2,10 @@
 
 .sidebar {
   background-color: $secondary-color;
-  // min-height: 100vh;
   transition: width 0.3s;
   width: 95%;
+  padding-bottom: 120px;
+  // ask for help
 }
 
 .img-container {
@@ -14,13 +15,14 @@
 }
 
 .logo-img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   transition: width 0.3s, height 0.3s;
 }
 
 hr {
-  margin: 0.5rem 0; /* Ajusta el margen superior e inferior */
+  margin: 0.5rem 0;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav {
@@ -32,7 +34,7 @@ hr {
 }
 
 .nav-link {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   color: #adb5bd;
@@ -43,13 +45,10 @@ hr {
   align-items: center;
 }
 
-.nav-link span {
-  text-align: center;
-}
-
 .nav-link:hover,
 .nav-link.active {
   color: $primary-color;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer {
@@ -60,26 +59,15 @@ hr {
 }
 
 .footer-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.footer-item {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.footer-item img {
-  width: 40px;
-  height: 40px;
-  transition: width 0.3s, height 0.3s;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 
 .footer-link {
   color: #adb5bd;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: color 0.3s;
 }
 
@@ -87,17 +75,10 @@ hr {
   color: $primary-color;
 }
 
-a:hover {
-  color: green;
-}
-
-button {
-  display: none;
-}
-
 @media (max-width: 500px) {
   .sidebar {
     width: 80px;
+    padding: 10px;
   }
 
   .logo-img {
@@ -123,17 +104,8 @@ button {
     display: none;
   }
 
-  .footer-item img {
-    width: 30px;
-    height: 30px;
-  }
-
   .footer-link {
-    font-size: 0.8rem;
-  }
-
-  button {
-    display: block;
+    font-size: 1rem;
   }
 }
 
@@ -153,9 +125,9 @@ button {
 }
 
 .nav-link i {
-  font-size: 1.2rem; /* Asegura que todos los iconos tengan el mismo tamaño */
+  font-size: 1.2rem;
   line-height: 1;
-  margin-right: 0.5rem; /* Ajusta este valor según el espacio deseado */
+  margin-right: 0.5rem;
 }
 
 .nav-link span {

@@ -1,20 +1,36 @@
+@import "../../../../assets/variables.scss";
+
 .btn-group {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .btn-flag {
-  position: relative;
-  padding-left: 40px; /* Espacio para la bandera */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 5px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $secondary-color;
+  }
 }
 
 .flag-icon {
-  position: absolute;
-  left: 10px;
-  width: 24px;
-  height: 24px;
+  width: 30px; /* Adjust size as needed */
+  height: 25px;
   border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: rotate(10deg);
+  }
 }
